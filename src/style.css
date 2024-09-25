@@ -1,0 +1,39 @@
+/* styles.css or your existing CSS file */
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+  }
+  
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  @media (min-width: 768px) {
+    .star {
+      width: 2px;
+      height: 2px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .star {
+      width: 1px;
+      height: 1px;
+    }
+  }
+  
