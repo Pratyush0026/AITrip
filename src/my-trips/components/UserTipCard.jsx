@@ -28,7 +28,7 @@ function UserTipCard({trip}) {
   return (
     <Link to={'/view-trip/'+trip?.id}>
     <div className='hover:scale-105 transition-all '>
-      <img src={PhotoUrl?PhotoUrl: '/placeholder.jpg'} alt="" className="object-cover rounded-xl h-[220px] " />
+      <img src={PhotoUrl?PhotoUrl: '/placeholder.jpg'} alt="" className="object-cover rounded-xl h-[220px] w-full  " />
 
       <div>
         <h2 className='font-bold text-lg'>{trip?.userSelection?.location?.label}</h2>
